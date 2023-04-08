@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+
+    <style>
+        .kart{
+            width:300px;
+            height:400px;
+            margin-left:20px;
+            border:1px solid rgb(117, 117, 119);
+            text-align: center;
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+            border-radius:20px; /*Köşeleri yuvarlatıyoruz*/
+            float:left;
+            /* Renk geçişi için linear-gradient kullanılır açık maviden koyuya doğru*/
+            background-image: linear-gradient(rgb(0, 119, 255), rgb(8, 2, 37));
+
+        }
+        .kart:hover{
+            box-shadow: rgb(21, 23, 26) 0px 20px 30px -10px;
+            border:1px solid rgb(13, 13, 15);
+        }
+
+        .resim{
+            margin-top:15px;
+            margin-left:auto;
+            margin-right:auto; 
+        }
+        .adsoyad{
+            font-size:30px;
+            font-weight: bold;
+            font-family: 'Oswald', sans-serif;
+            text-align: center;
+            margin-top:10px;
+            color:white;
+            text-transform: capitalize; 
+            line-height: 1.4em;
+            letter-spacing: 0.10em; /*Harfler arasındaki mesafeyi ayarlar*/
+            /*
+                uppercase: büyük harf
+                lowecase:küçük harf
+                capitalize: kelimelerin ilk harfleri büyük
+            */
+            background-color: orange;
+        }
+        .adsoyad:hover{
+            text-decoration: underline; 
+            /* yazının üzerine geldiğinde altını çizer*/
+            /* line-through : tam ortadan üzerini çizer */
+            /* overline: tepesini çizer*/
+
+        }
+        .departman{
+            font-size:20px;
+            font-family: 'Oswald', sans-serif;
+            text-align: center;
+            color:white;
+        }
+        .unvan{
+            font-size:17px;
+            font-weight: bold;
+            font-family: 'Oswald', sans-serif;
+            color:white;
+        }
+        .email{
+            font-family: 'Oswald', sans-serif;
+            font-size:15px;
+            margin-top:10px;
+            text-align: center;
+            color:white;
+            padding:5px;
+            line-height: 0.9em;
+            min-height: 0.9em;
+           /* background-color: rgb(3, 66, 66);*/
+        }
+
+        .button{
+            margin-top:10px;
+            width:200px;
+            height: 50px;
+            text-align: center;
+            color: white;
+            background-image: linear-gradient(rgb(0, 119, 255), rgb(8, 2, 37));  /*renk geçisi*/
+            border-radius: 20px;
+        }
+
+        .button:hover{
+            background-image: linear-gradient(rgb(8, 2, 37), rgb(0, 119, 255));
+        }
+
+    </style>
+
+</head>
+<body>
+        <div class="kart">
+            <!-- Öğrenci/akademisyen fotoğraf-->
+            <img class="resim" src="Ekran Alıntısı.JPG" width="150" height="150">
+            <!-- Ünvan -->
+            <div class="unvan">Junior Dev. </div>
+            <!-- Adı Soyadı-->
+            <div class="adsoyad"> ezgi yıldız </div>
+            <!-- Departmanı  -->
+            <div class="departman">Software </div>
+            <div class="email">contact@ezgiyildiz.net</div>
+            <button class="button">Show CV</button>
+        </div>
+
+        <div class="kart">
+            <!-- Öğrenci/akademisyen fotoğraf-->
+            <img class="resim" src="Ekran Alıntısı.JPG" width="150" height="150">
+            <!-- Ünvan -->
+            <div class="unvan">Junior Dev. </div>
+            <!-- Adı Soyadı-->
+            <div class="adsoyad"> ezgi yıldız </div>
+            <!-- Departmanı  -->
+            <div class="departman">Software </div>
+            <div class="email">ezgiyildiz2@hotmail.com</div>
+            <button class="button">Show CV</button>
+        </div>
+
+
+       
+</body>
+</html>
